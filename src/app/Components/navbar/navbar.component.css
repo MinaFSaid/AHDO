@@ -1,0 +1,8 @@
+.navbare {
+    position: relative; /* Ensure relative positioning for absolute children */
+  }
+.mega-menu {
+    position: absolute;
+    width: 100%;
+    z-index: 1000; /* Ensure it appears above other content */
+  }

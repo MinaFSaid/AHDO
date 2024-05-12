@@ -8,6 +8,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { ContactUsComponent } from './Components/contact-us/contact-us.component';
 import { HomeComponent } from './Components/home/home.component';
 import { LayoutComponent } from './Components/layout/layout.component';
+import { AboutUsComponent } from './Components/about-us/about-us.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { LayoutComponent } from './Components/layout/layout.component';
     ContactUsComponent,
     HomeComponent,
     LayoutComponent,
+    AboutUsComponent,
   
   ],
   imports: [

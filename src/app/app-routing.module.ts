@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { LayoutComponent } from './Components/layout/layout.component';
 import { ContactUsComponent } from './Components/contact-us/contact-us.component';
 import { HomeComponent } from './Components/home/home.component';
+import { AboutUsComponent } from './Components/about-us/about-us.component';
 
 
 
@@ -13,6 +14,7 @@ const routes: Routes = [
     {path: '', redirectTo: 'home', pathMatch:'full'},
     {path: 'home', component: HomeComponent},
     {path: 'contact-us', component: ContactUsComponent},
+    {path: 'about-us', component: AboutUsComponent},
   ]},
 ];
 

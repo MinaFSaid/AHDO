@@ -9,6 +9,9 @@ import { ContactUsComponent } from './Components/contact-us/contact-us.component
 import { HomeComponent } from './Components/home/home.component';
 import { LayoutComponent } from './Components/layout/layout.component';
 import { AboutUsComponent } from './Components/about-us/about-us.component';
+import { VisionMissionValuesComponent } from './Components/vision-mission-values/vision-mission-values.component';
+import { CodeOfConductsComponent } from './Components/code-of-conducts/code-of-conducts.component';
+import { AboutTeamComponent } from './Components/about-team/about-team.component';
 
 
 @NgModule({
@@ -20,6 +23,9 @@ import { AboutUsComponent } from './Components/about-us/about-us.component';
     HomeComponent,
     LayoutComponent,
     AboutUsComponent,
+    VisionMissionValuesComponent,
+    CodeOfConductsComponent,
+    AboutTeamComponent,
   
   ],
   imports: [

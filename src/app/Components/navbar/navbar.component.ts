@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { GetRequestsService } from './../services/get-requests.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,8 +7,31 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  
   isAboutUsOpen = false;
   isIntegratedSolutionsOpen = false;
+  menu:any = [];
+
+  constructor(private _GetRequestsService:GetRequestsService){
+    this._GetRequestsService.getMenus().subscribe((data)=>{
+      // console.log(data.result);
+      this.menu = data.result
+    })
+  }
+
+  @Input() menus: any;
+
+  RoutingTo(id:any){
+    console.log(id)
+  }
+
+  getDropdownId(menuId: number): string {
+    return `dropdown-${menuId}`;
+  }
+
+  getButtonId(menuId: number): string {
+    return `button-${menuId}`;
+  }
 
   toggleDropdown(dropdown: string) {
     if (dropdown === 'aboutUs') {
@@ -22,5 +46,9 @@ export class NavbarComponent {
   leaveMegaDiv(){
     this.isAboutUsOpen = false;
     this.isIntegratedSolutionsOpen = false;
+  }
+
+  pageDetails(id:any){
+    console.log(id);
   }
 }

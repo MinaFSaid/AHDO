@@ -8,6 +8,7 @@ import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { VisionMissionValuesComponent } from './Components/vision-mission-values/vision-mission-values.component';
 import { CodeOfConductsComponent } from './Components/code-of-conducts/code-of-conducts.component';
 import { AboutTeamComponent } from './Components/about-team/about-team.component';
+import { DynamicPageComponent } from './Components/dynamic-page/dynamic-page.component';
 
 
 
@@ -21,6 +22,7 @@ const routes: Routes = [
     {path: 'vision-mission-values', component: VisionMissionValuesComponent},
     {path: 'our-code-of-conduct', component: CodeOfConductsComponent},
     {path: 'about-team', component: AboutTeamComponent},
+    { path: 'Integrated-Solutions/:id', component: DynamicPageComponent },
   ]},
 ];
 

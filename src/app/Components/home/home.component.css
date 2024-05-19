@@ -10,4 +10,10 @@
     max-height: 100%;
     object-fit: contain; /* Ensures the image maintains its aspect ratio */
   }
-  
+  .bg-color{
+    background-color:#4D95D0 !important;
+    color: white;
+  }
+  .bg-color-text{
+    color: white;
+  }

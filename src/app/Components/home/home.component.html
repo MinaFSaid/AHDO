@@ -36,7 +36,7 @@
 </div>
 
 
-<div class="max-w-6xl mx-auto font-[sans-serif] text-[#333] py-5">
+<!-- <div class="max-w-6xl mx-auto font-[sans-serif] text-[#333] py-5">
     <h2 class="sm:text-4xl text-2xl font-extrabold text-center mb-16">HYGIENE AND HOSPITALITY SOLUTIONS</h2>
     <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12">
       <div class="p-4 text-center">
@@ -102,8 +102,26 @@
         <h3 class="text-xl font-semibold mb-2">Communication</h3>
       </div>
     </div>
+  </div> -->
+
+
+  <div class=" px-4 py-12 font-[sans-serif] text-[#333]">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="sm:text-4xl text-2xl font-extrabold text-center mb-16">HYGIENE AND HOSPITALITY SOLUTIONS</h2>
+
+      <owl-carousel-o [options]="customOptionsCard">
+        <ng-template *ngFor="let menu of childPagesOfFoodSafety; let i = index" carouselSlide>
+          <div class="py-6 mx-4 px-4 bg-white rounded text-center" [ngClass]="{ 'bg-color': i % 2 === 0 }">
+            <h3 [ngClass]="{ 'bg-color-text': i % 2 === 0 }" class="text-xl font-extrabold mb-4">{{menu.name}}</h3>
+            <p [ngClass]="{ 'bg-color-text': i % 2 === 0 }" class="text-gray-500 text-sm">Qui elit labore in nisi dolore tempor anim laboris ipsum ad ad consequat id. Dolore et sint mollit in nisi tempor culpa consectetur.</p>
+            <button [routerLink]="['/Integrated-Solutions', menu.id]" [ngClass]="{ 'bg-color-text': i % 2 === 0 }" class="text-sm font-semibold bg-transparent px-4 py-1.5 border-2 border-blue-500 text-blue-500 mt-6 rounded-full">Read More</button>
+          </div>
+        </ng-template>
+      </owl-carousel-o>
+    </div>
   </div>
 
+  <!-- [ngClass]="{ 'bg-color': i % 2 === 0 }" -->
   <div>
     <h2 class="sm:text-4xl text-2xl font-extrabold text-center mb-16">OUR SUCCESS PARTNERS</h2>
     <owl-carousel-o [options]="customOptions">

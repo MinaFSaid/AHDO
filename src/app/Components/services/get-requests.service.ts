@@ -6,8 +6,13 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class GetRequestsService {
-  baseUrl:string = "http://41.196.137.6:5053";
-  constructor(private _HttpClient:HttpClient) { }
+  baseUrl:string = "https://41.196.137.6:5054";
+  menuItems:any = [];
+  constructor(private _HttpClient:HttpClient) {
+    this.getMenus().subscribe((data)=>{
+      this.menuItems = data.result
+    })
+   }
 
   getMenus():Observable<any>
   {

@@ -13,7 +13,11 @@ import { VisionMissionValuesComponent } from './Components/vision-mission-values
 import { CodeOfConductsComponent } from './Components/code-of-conducts/code-of-conducts.component';
 import { AboutTeamComponent } from './Components/about-team/about-team.component';
 import { DynamicPageComponent } from './Components/dynamic-page/dynamic-page.component';
-
+import { EventsNewsComponent } from './Components/events-news/events-news.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -28,12 +32,17 @@ import { DynamicPageComponent } from './Components/dynamic-page/dynamic-page.com
     CodeOfConductsComponent,
     AboutTeamComponent,
     DynamicPageComponent,
+    EventsNewsComponent,
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatMenuModule,
+    MatButtonModule,
+    CarouselModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

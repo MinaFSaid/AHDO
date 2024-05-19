@@ -11,3 +11,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   div{
     border: 1px solid black;
 }  */
+
+h1{
+  font-size: 2.8rem !important;
+}
+.et_pb_text_inner > p{
+  color:rgb(96, 96, 96)
+}

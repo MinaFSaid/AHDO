@@ -17,3 +17,27 @@
   .bg-color-text{
     color: white;
   }
+  .homeBack{
+    background-image: Url(../../../assets/Images/bg-effect.svg);
+  }
+
+
+  .custom-shape-divider-top-1717021910 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.xyxy {
+    position: relative;
+    display: block;
+    width: calc(118% + 1.3px);
+    height: 143px;
+}
+
+.custom-shape-divider-top-1717021910 .shape-fill {
+    fill: #FFFFFF;
+}

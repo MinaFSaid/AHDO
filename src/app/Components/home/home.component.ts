@@ -63,6 +63,7 @@ export class HomeComponent {
 
   constructor(private _GetRequestsService: GetRequestsService) {
     this._GetRequestsService.getMenus().subscribe((data) => {
+      // console.log(data);
       this.menu = data.result
       this.sub = true;
       this.setChildPagesOfFoodSafety();

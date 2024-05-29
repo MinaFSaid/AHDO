@@ -10,6 +10,7 @@ import { CodeOfConductsComponent } from './Components/code-of-conducts/code-of-c
 import { AboutTeamComponent } from './Components/about-team/about-team.component';
 import { DynamicPageComponent } from './Components/dynamic-page/dynamic-page.component';
 import { EventsNewsComponent } from './Components/events-news/events-news.component';
+import { IntegratedSolutionsDiscoverComponent } from './Components/integrated-solutions-discover/integrated-solutions-discover.component';
 
 
 
@@ -25,6 +26,7 @@ const routes: Routes = [
     {path: 'about-team', component: AboutTeamComponent},
     { path: 'Integrated-Solutions/:id', component: DynamicPageComponent },
     { path: 'events-news', component: EventsNewsComponent },
+    { path: 'Integrated-Solutions-Tree', component: IntegratedSolutionsDiscoverComponent },
   ]},
 ];
 

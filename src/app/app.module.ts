@@ -18,6 +18,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IntegratedSolutionsDiscoverComponent } from './Components/integrated-solutions-discover/integrated-solutions-discover.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AboutTeamComponent,
     DynamicPageComponent,
     EventsNewsComponent,
+    IntegratedSolutionsDiscoverComponent,
   
   ],
   imports: [

@@ -9,14 +9,16 @@ import { GetRequestsService } from './../services/get-requests.service';
 })
 export class BlogsDetailsComponent implements OnInit{
   id: string ="";
+  name: string = "";
   blogDetails:any[]=[];
 
   constructor(private route: ActivatedRoute, private _GetRequestsService:GetRequestsService) {}
 
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('id')!;
+    this.name = this.route.snapshot.paramMap.get('name')!;
     this._GetRequestsService.GetBlogDetails(this.id).subscribe((data)=>{
-      console.log(data);
+      // console.log(data);
       this.blogDetails = data.result;
     })
   }

@@ -29,7 +29,7 @@ const routes: Routes = [
     { path: 'Integrated-Solutions/:id', component: DynamicPageComponent },
     { path: 'events-news', component: EventsNewsComponent },
     { path: 'blogs', component: BlogsComponent },
-    { path: 'blogsDetails/:id', component: BlogsDetailsComponent },
+    { path: 'blogsDetails/:id/:name', component: BlogsDetailsComponent },
     { path: 'Integrated-Solutions-Tree', component: IntegratedSolutionsDiscoverComponent },
   ]},
 ];

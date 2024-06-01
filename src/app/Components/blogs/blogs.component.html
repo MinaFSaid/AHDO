@@ -17,7 +17,7 @@
                     <div dir="rtl"><span style="font-weight: 600;">By:</span> {{blogs.writtenBy}} | <span
                             style="font-weight: 600;">Date:</span> {{blogs.writtenDate | date}}</div>
                     <p dir="rtl" class="text-base text-gray-500">{{blogs.details}}</p>
-                    <a dir="rtl" [routerLink]="['/blogsDetails', blogs.id]"
+                    <a dir="rtl" [routerLink]="['/blogsDetails', blogs.id,blogs.header]"
                         class="inline-block mt-6 px-6 py-2.5 bg-green-500 text-white text-base font-medium rounded-md hover:bg-green-600">المزيد...</a>
                 </div>
             </div>

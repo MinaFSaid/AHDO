@@ -1,4 +1,4 @@
-<div class="container light">
+<!-- <div class="container light">
   <div class="row py-5">
     <div class="col-12 d-flex justify-content-center header">AHDO IN MEDIA AND CSR EVENTS</div>
   </div>
@@ -138,4 +138,29 @@
   <div class="row pb-5">
     <div class="col-12 d-flex justify-content-center">Our activities for trainees around the globe; Latin America for East Eastern Europe, Africa and Middle East</div>
   </div>
+</div> -->
+
+
+
+
+<div class="container">
+  <div class="row py-5">
+    <div class="col-12 d-flex justify-content-center header">AHDO IN MEDIA AND CSR EVENTS</div>
+  </div>
+  <div class="row">
+    <div *ngFor="let events of events" class="col-12 my-4">
+      <div class="col-12 d-flex justify-content-center header bg-red-500"
+        style="color: rgb(255, 255, 255); font-size: 2.2rem;">{{events.name}}
+      </div>
+      <div class="flex-wrap d-flex col-12 justify-content-md-around justify-content-center my-5">
+        <div *ngFor="let eventsDetails of events.eventDetail" class="col-md-5 col-12 my-4 card h-100">
+          <img src="{{eventsDetails.imageUrl}}" class="card-img-top" style="height: 60vh;">
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">{{eventsDetails.notes | wordLimit:20}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+

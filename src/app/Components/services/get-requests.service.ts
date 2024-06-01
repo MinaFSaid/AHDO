@@ -32,4 +32,30 @@ export class GetRequestsService {
     return this._HttpClient.get<any>(this.baseUrl + '/Pages/GetPageDetails',{params,headers});
   }
 
+  GetEvents():Observable<any>
+  {
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+    return this._HttpClient.get<any>(this.baseUrl + '/Pages/GetEvents',{headers});
+  }
+
+  Getblogs():Observable<any>
+  {
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+    return this._HttpClient.get<any>(this.baseUrl + '/Pages/GetBlogs',{headers});
+  }
+
+  GetBlogDetails(id:any):Observable<any>
+  {
+    const params = new HttpParams().set('blogHeaderId', id)
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+    return this._HttpClient.get<any>(this.baseUrl + '/Pages/GetBlogDetails',{params,headers});
+  }
+
+
 }

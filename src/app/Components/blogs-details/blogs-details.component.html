@@ -1,0 +1,29 @@
+<!-- <div class="grid md:grid-cols-2 items-center md:gap-4 gap-8 font-[sans-serif] text-[#333] px-5 my-5 d-flex justify-content-center">
+    <div class="max-md:order-1 max-md:text-center">
+        <h3 class="md:text-3xl text-2xl md:leading-10">Prompt Delivery and Enjoyable Dining Experience.</h3>
+        <p class="mt-4 text-sm">Laboris qui Lorem ad tempor ut reprehenderit. Nostrud anim nulla officia ea sit
+            deserunt. Eu eu quis anim aute Laboris qui Lorem ad tempor ut reprehenderit.</p>
+        <button type="button"
+            class="px-6 py-2 mt-8 font-semibold rounded text-sm outline-none border-2 border-[#333] hover:bg-[#333] hover:text-white transition-all duration-300">Explore</button>
+    </div>
+    <div class="md:h-[450px]">
+        <img src="https://readymadeui.com/photo.webp" class="w-full h-full md:object-contain" />
+    </div>
+</div> -->
+
+<div class="container">
+    <div class="row">
+        <div *ngFor="let blogs of blogDetails; let i = index" class="d-flex flex-wrap justify-content-center col-12 my-5">
+            <div dir="rtl" class="col-md-6 col-10 d-flex flex-column justify-content-center  px-md-5 my-2 order-1">
+                <h3 class="md:text-3xl text-2xl md:leading-10" style="font-size: 1.8rem;font-weight: 600;">عربي عربي عربي</h3>
+                <p class="mt-4" style="font-size: 1.6rem;">{{blogs.notes}}</p>
+            </div>
+            <div class="col-md-4 col-10 order-0 my-2">
+                <img src="{{blogs.imageUrl}}" class="w-full h-full md:object-contain" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

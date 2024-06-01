@@ -19,6 +19,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IntegratedSolutionsDiscoverComponent } from './Components/integrated-solutions-discover/integrated-solutions-discover.component';
+import { BlogsComponent } from './Components/blogs/blogs.component';
+import { WordLimitPipe } from './pipes/word-limit.pipe';
+import { BlogsDetailsComponent } from './Components/blogs-details/blogs-details.component';
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -35,6 +39,9 @@ import { IntegratedSolutionsDiscoverComponent } from './Components/integrated-so
     DynamicPageComponent,
     EventsNewsComponent,
     IntegratedSolutionsDiscoverComponent,
+    BlogsComponent,
+    WordLimitPipe,
+    BlogsDetailsComponent,
   
   ],
   imports: [
@@ -44,7 +51,8 @@ import { IntegratedSolutionsDiscoverComponent } from './Components/integrated-so
     MatMenuModule,
     MatButtonModule,
     CarouselModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

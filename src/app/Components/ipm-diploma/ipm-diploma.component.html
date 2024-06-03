@@ -40,14 +40,13 @@
                             Country of study
                         </mat-panel-description>
                     </mat-expansion-panel-header>
-                    <p class="border p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque esse
-                        repudiandae ducimus
-                        veritatis, dignissimos quos dolore tempore repellendus molestias itaque, est praesentium
-                        placeat porro? Quam veritatis maxime sequi amet quaerat!
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum alias natus voluptate dolorem,
-                        minima amet, distinctio nostrum unde sapiente, dignissimos voluptatum doloribus. Nisi,
-                        perspiciatis dicta? Ducimus, molestiae eum? Quidem, culpa?
-                    </p>
+                    <div class="d-flex align-items-center p-5 border" style="display: block;">
+                        <ul>
+                            <li>Egypt</li>
+                            <li>Turkey<br>
+                                (for accepted applications for the cross training programme)</li>
+                        </ul>
+                    </div>
                 </mat-expansion-panel>
 
                 <mat-expansion-panel class="p-4 shadow-none" (opened)="panelOpenState = true"
@@ -58,14 +57,46 @@
                             Studying Fees :
                         </mat-panel-description>
                     </mat-expansion-panel-header>
-                    <p class="border p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque esse
-                        repudiandae ducimus
-                        veritatis, dignissimos quos dolore tempore repellendus molestias itaque, est praesentium
-                        placeat porro? Quam veritatis maxime sequi amet quaerat!
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum alias natus voluptate dolorem,
-                        minima amet, distinctio nostrum unde sapiente, dignissimos voluptatum doloribus. Nisi,
-                        perspiciatis dicta? Ducimus, molestiae eum? Quidem, culpa?
-                    </p>
+                    <div class="et_pb_toggle_content clearfix border p-5" style="display: block;">
+                        <ul>
+                            <li>Study in Turkey is FREE of charge including the accommodation</li>
+                            <li>Study in Egypt fees: EGP 24300 (For Egypt Residents),<br>USD 2250 (For Egypt
+                                non-residents).</li>
+                        </ul>
+                        <p class="my-4">Scholarships are applied as follows:</p>
+                        <table class="border"
+                            style="height: 280px; width: 73.819%; border-collapse: collapse; border-style: solid; border-color: #0e2c5b; float: left;">
+                            <tbody class="border">
+                                <tr style="height: 24px;">
+                                    <td style="width: 8.71515%; height: 24px; text-align: center;">
+                                        <strong>Discount</strong>
+                                    </td>
+                                    <td style="width: 36.4542%; height: 24px; text-align: center;">
+                                        <strong>Description</strong>
+                                    </td>
+                                <tr style="height: 24px;">
+                                    <td style="width: 8.71515%; height: 24px; text-align: center;"><span
+                                            style="color: #993300; font-family: inherit;"><strong>Up-to
+                                                20%</strong></span></td>
+                                    <td style="width: 36.4542%; height: 24px;">&nbsp;Fresh graduates and last year
+                                        students<br><strong>(EGP 19450 </strong>instead of EGP 24300<strong>)<br>(USD
+                                            1800 </strong>instead of USD 2250<strong>)<br></strong></td>
+                                </tr>
+                                <tr style="height: 24px;">
+                                    <td style="width: 8.71515%; height: 24px; text-align: center;"><span
+                                            style="color: #993300;"><strong>10%</strong></span></td>
+                                    <td style="width: 36.4542%; height: 24px;">&nbsp;Extra discount for AHDO Trainees/
+                                        Alumni</td>
+                                </tr>
+                                <tr style="height: 24px;">
+                                    <td style="width: 8.71515%; height: 24px; text-align: center;"><span
+                                            style="color: #993300;"><strong>10%</strong></span></td>
+                                    <td style="width: 36.4542%; height: 24px;">&nbsp;Extra discount for AHDO success
+                                        partners</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </mat-expansion-panel>
 
                 <mat-expansion-panel class="p-4 shadow-none" (opened)="panelOpenState = true"
@@ -76,14 +107,22 @@
                             Entrance Fees:
                         </mat-panel-description>
                     </mat-expansion-panel-header>
-                    <p class="border p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque esse
-                        repudiandae ducimus
-                        veritatis, dignissimos quos dolore tempore repellendus molestias itaque, est praesentium
-                        placeat porro? Quam veritatis maxime sequi amet quaerat!
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum alias natus voluptate dolorem,
-                        minima amet, distinctio nostrum unde sapiente, dignissimos voluptatum doloribus. Nisi,
-                        perspiciatis dicta? Ducimus, molestiae eum? Quidem, culpa?
-                    </p>
+                    <div class="et_pb_toggle_content clearfix border p-5" style="display: block;">
+                        <ul>
+                            <li><span style="font-weight: 600;">Application Fees:</span>
+                                <ul>
+                                    <li>EGP 450 (Non-refundable) For Egypt Residents,<br>USD 50 (Non-refundable) For
+                                        non-residents</li>
+                                </ul>
+                            </li>
+                            <li class="my-4"><span style="font-weight: 600;">English Placement test fees:</span>
+                                <ul>
+                                    <li>EGP 200 (Non-refundable) For Egypt Residents,<br>USD 30 (Non-refundable) For
+                                        non-residents</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </mat-expansion-panel>
                 <mat-expansion-panel class="p-4 shadow-none" (opened)="panelOpenState = true"
                     (closed)="panelOpenState = false">
@@ -93,14 +132,41 @@
                             Who can attend?
                         </mat-panel-description>
                     </mat-expansion-panel-header>
-                    <p class="border p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque esse
-                        repudiandae ducimus
-                        veritatis, dignissimos quos dolore tempore repellendus molestias itaque, est praesentium
-                        placeat porro? Quam veritatis maxime sequi amet quaerat!
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum alias natus voluptate dolorem,
-                        minima amet, distinctio nostrum unde sapiente, dignissimos voluptatum doloribus. Nisi,
-                        perspiciatis dicta? Ducimus, molestiae eum? Quidem, culpa?
-                    </p>
+                    <div class="et_pb_toggle_content clearfix border p-5" style="display: block;"><strong>Relevant
+                            Educational and/or Relevant Work Experience as the following:</strong>
+                        <p></p>
+                        <ul>
+                            <li class="my-4">Relevant Education as:
+                                <ul class="ps-3">
+                                    <li>Relevant Bachelor degree in
+                                        <ul class="ps-3">
+                                            <li>Agriculture</li>
+                                            <li>Higher Agriculture Institution for Agriculture Collaboration</li>
+                                            <li>Medicine</li>
+                                            <li>Veterinary</li>
+                                            <li>Science</li>
+                                            <li>Education</li>
+                                            <li>Others,</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Relevant Work Experience as:
+                                <ul class="ps-3">
+                                    <li>Packhouse team members</li>
+                                    <li>Animal Farming team members</li>
+                                    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Plant
+                                            protection/production Agronomist</span></li>
+                                    <li>Post Harvesting Processing team members</li>
+                                    <li>Vegetables and Fruits Packhouse team members</li>
+                                    <li>Other agricultural Businesses Activities team members</li>
+                                    <li>Food Safety Professional team members</li>
+                                    <li>Food Businesses team members</li>
+                                    <li>Caterers, Hotels, Resorts, Hospital related team members</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </mat-expansion-panel>
 
                 <mat-expansion-panel class="p-4 shadow-none" (opened)="panelOpenState = true"
@@ -111,14 +177,17 @@
                             Required Documents for the Application:
                         </mat-panel-description>
                     </mat-expansion-panel-header>
-                    <p class="border p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque esse
-                        repudiandae ducimus
-                        veritatis, dignissimos quos dolore tempore repellendus molestias itaque, est praesentium
-                        placeat porro? Quam veritatis maxime sequi amet quaerat!
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum alias natus voluptate dolorem,
-                        minima amet, distinctio nostrum unde sapiente, dignissimos voluptatum doloribus. Nisi,
-                        perspiciatis dicta? Ducimus, molestiae eum? Quidem, culpa?
-                    </p>
+                    <div class="et_pb_toggle_content clearfix border p-5" style="display: block;">Registration to the Diploma requires filling an application form with fee of 350 EGP.<p></p>
+                        <ul class="ps-4">
+                        <li>Copy of the national ID / Passport for non-residents</li>
+                        <li>Birth Certificate</li>
+                        <li>Personal Photo</li>
+                        <li>Updated CV</li>
+                        <li>Transcript (Graduation Certificate)</li>
+                        <li>Military completion certificate if applicable</li>
+                        <li>Application Fees Receipt</li>
+                        <li>Motivation letter</li>
+                        </ul></div>
                 </mat-expansion-panel>
 
             </mat-accordion>

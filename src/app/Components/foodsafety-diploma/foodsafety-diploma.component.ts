@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './foodsafety-diploma.component.css'
 })
 export class FoodsafetyDiplomaComponent {
+  panelOpenState = false;
 
 }

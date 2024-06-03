@@ -1,0 +1,17 @@
+.mat-expansion-panel-header-description {
+    margin-right: 0 !important;
+    padding: 0 !important;
+    font-size: 1rem !important;
+}
+
+li {
+    list-style-type: circle;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}

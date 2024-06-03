@@ -23,6 +23,9 @@ import { BlogsComponent } from './Components/blogs/blogs.component';
 import { WordLimitPipe } from './pipes/word-limit.pipe';
 import { BlogsDetailsComponent } from './Components/blogs-details/blogs-details.component';
 import { RouterModule, Routes } from '@angular/router';
+import { IpmDiplomaComponent } from './Components/ipm-diploma/ipm-diploma.component';
+import { FoodsafetyDiplomaComponent } from './Components/foodsafety-diploma/foodsafety-diploma.component';
+import {MatExpansionModule} from '@angular/material/expansion'
 
 @NgModule({
   declarations: [
@@ -42,6 +45,8 @@ import { RouterModule, Routes } from '@angular/router';
     BlogsComponent,
     WordLimitPipe,
     BlogsDetailsComponent,
+    IpmDiplomaComponent,
+    FoodsafetyDiplomaComponent,
   
   ],
   imports: [
@@ -53,6 +58,7 @@ import { RouterModule, Routes } from '@angular/router';
     CarouselModule,
     BrowserAnimationsModule,
     RouterModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

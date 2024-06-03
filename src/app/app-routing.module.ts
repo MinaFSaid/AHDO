@@ -13,6 +13,8 @@ import { EventsNewsComponent } from './Components/events-news/events-news.compon
 import { IntegratedSolutionsDiscoverComponent } from './Components/integrated-solutions-discover/integrated-solutions-discover.component';
 import { BlogsComponent } from './Components/blogs/blogs.component';
 import { BlogsDetailsComponent } from './Components/blogs-details/blogs-details.component';
+import { FoodsafetyDiplomaComponent } from './Components/foodsafety-diploma/foodsafety-diploma.component';
+import { IpmDiplomaComponent } from './Components/ipm-diploma/ipm-diploma.component';
 
 
 
@@ -31,6 +33,8 @@ const routes: Routes = [
     { path: 'blogs', component: BlogsComponent },
     { path: 'blogsDetails/:id/:name', component: BlogsDetailsComponent },
     { path: 'Integrated-Solutions-Tree', component: IntegratedSolutionsDiscoverComponent },
+    { path: 'IPM-Diploma', component: IpmDiplomaComponent },
+    { path: 'Food-Safety-Diploma', component: FoodsafetyDiplomaComponent },
   ]},
 ];
 
